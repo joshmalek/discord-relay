@@ -1,0 +1,20 @@
+{
+  "name": "discord-relay",
+  "version": "1.0.0",
+  "description": "Node.js program to relay messages from one Discord server to another unrelated one",
+  "main": "relay.js",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"echo no test function yet\""
+  },
+  "keywords": [
+    "discord",
+    "relay",
+    "bot"
+  ],
+  "author": "Joshua Malek",
+  "license": "ISC"
+}
