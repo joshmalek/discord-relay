@@ -4,20 +4,22 @@
 @node v8.11.3
 @npm v6.1.0
 */
+//require discord.js package to do all discord related activities
 const Discord = require('discord.js');
-//create envs for each bot client
-const panda = new Discord.Client();
-const rand = new Discord.Client();
+
+//create enviroments for each bot client
+const listen = new Discord.Client();
+const relay = new Discord.Client();
 
 //import config file
 const config = require('./config.json');
 
 //logins
-//panda is "listener"
+//listen is the "listener" who passes on the message to the relayer
 listen.on('ready', () => {
   console.log(`Logged in as ${listen.user.tag}!`);
 });
-//rand is "relayer"
+//relay is the "relayer" who takes the message from the listener and relays it
 relay.on('ready', () => {
   console.log(`Logged in as ${relay.user.tag}!`);
 });
@@ -52,11 +54,10 @@ listen.on('message', msg => {
     message = mention(message, msg.mentions.users.array());
   }
   //If you want to duplicate all messages sent from a specific channel, use this
-  if (msg.channel.id == config.rand_id) {
-    console.log("a message was sent to crypto-rand-vip, sending to duplicate");
-    rand.channels.get(config.rand_dupe).send(message);
+  if (msg.channel.id == config.channel_id) {
+    console.log("a message was sent to _your channel_, sending to duplicate");
+    relay.channels.get(config.channel_dupe_id).send(message);
   }
-
 });
 
 //async logins to discord, using config tokens
