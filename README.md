@@ -18,8 +18,8 @@ You want to join a crypto Discord server that charges for access, you can pay fo
 #### Account Setup and Channel Requirements: ####
 1. Listener account token (can be bot or human account, use human at your own risk, technincally bannable but I've had no issues)
 2. Relayer account token (should usually be a bot account)
-3. Channel you want to relay messages *from*
-4. Channel you want to relay messages *to*
+3. Channel you want to relay messages *from* (must be a member)
+4. Channel you want to relay messages *to* (must be an owner)
 
 A solid tutorial to bot accounts: https://twentysix26.github.io/Red-Docs/red_guide_bot_accounts/
 
