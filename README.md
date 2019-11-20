@@ -2,7 +2,8 @@
 #### Description: ####
 Node.js program to relay messages from one discord server (can scrape messages from all channels) to another server using bot accounts.
 
-Sample Use case:  You want to join a crypto Discord server that charges for access, you can pay for one account to be in the server and relay all information to your own server, and charge access accordingly.  As the listener account is a normal human discord account (read: not a bot), there is no way for the server owners to detect that messages are being scraped from the server. 
+#### Sample Use: ####
+You want to join a crypto Discord server that charges for access, you can pay for one account to be in the server and relay all information to your own server, and charge access accordingly.  As the listener account is a normal human discord account (read: not a bot), there is no way for the server owners to detect that messages are being scraped from the server. 
 
 **Note:**  At minimum for this program to work you need ***two unique Discord Accounts***.  The program in this repository is a simplified version of my original program, and I have personally built up this program to have one listener account and ***14*** relayer accounts.  This is incredibly easy to build off of, and please contact me if there are any issues or questions.
 
