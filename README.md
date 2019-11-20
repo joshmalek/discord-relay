@@ -4,6 +4,7 @@ Node.js program to relay messages from one discord channel to another using bot 
 
 **Note:**  At minimum for this program to work you need ***two unique Discord Accounts***.  The program in this repository is a simplified version of my original program, and I have personally built up this program to have one listener account and ***14*** relayer accounts.  This is incredibly easy to build off of, and please contact me if there are any issues or questions.
 
+![alt text](img/FlowGraph.png)
 
 #### Software Requirements: ####
 1. Node.js v8.11.x
